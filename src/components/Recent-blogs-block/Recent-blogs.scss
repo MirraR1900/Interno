@@ -1,0 +1,159 @@
+@import '../../styles/values.scss';
+
+.container-recent-blogs {
+    margin: 0 auto;
+    max-width: 1200px;
+    margin-bottom: 150px;
+
+    @media screen and (max-width: 940px) {
+        margin-bottom: 100px;
+    }
+
+    h2 {
+        margin-bottom: 40px;
+        font-family: $DMSerifDisplay;
+        font-size: 48px;
+        line-height: 62px;
+        text-align: center;
+        color: $dark-gray;
+
+        @media screen and (max-width: 640px) {
+            font-size: 38px;
+            line-height: 45px;
+        }
+    }
+
+    .recent-blogs-description {
+        margin: 0 auto 70px auto;
+        max-width: 590px;
+        font-family: $Jost;
+        font-size: 22px;
+        line-height: 33px;
+        text-align: center;
+        color: $gray;
+
+        @media screen and (max-width: 640px) {
+            padding: 0 40px;
+            font-size: 18px;
+            line-height: 28px;
+        }
+
+        @media screen and (max-width: 480px) {
+            padding: 0 20px;
+            max-width: 400px;
+        }
+    }
+
+    .container-items-recent-blogs {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+
+        @media screen and (max-width: 1200px) {
+            margin: 0 10px;
+            gap: 20px;
+        }
+
+        @media screen and (max-width: 940px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media screen and (max-width: 640px) {
+            grid-template-columns: 1fr;
+        }
+
+        .item-recent-blog {
+            margin-bottom: 30px;
+            padding: 20px;
+            max-width: 380px;
+            box-sizing: border-box;
+            border: 1px solid $light-white;
+            border-radius: 62px;
+
+            h3 {
+                font-family: $DMSerifDisplay;
+                font-size: 25px;
+                line-height: 35px;
+                letter-spacing: 0.5px;
+                font-weight: 400;
+
+                @media screen and (max-width: 1200px) {
+                    font-size: 22px;
+                    line-height: 30px;
+                }
+
+                @media screen and (max-width: 1024px) {
+                    font-size: 18px;
+                    line-height: 26px;
+                }
+            }
+
+            .know-more {
+                padding: 0;
+                border: none;
+                background: none;
+
+                img {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+
+            .container-image-recent-blog {
+                position: relative;
+                // display: grid;
+                // justify-items: center;
+                // border: 1px solid violet;
+
+
+                .name-items-recent-blog {
+                    position: absolute;
+                    z-index: 3;
+                    left: 25px;
+                    bottom: 30px;
+                    padding: 10px;
+                    background: $white;
+                    border: 1px solid $white;
+                    border-radius: 8px 8px 8px 0;
+                    font-family: $Jost;
+                    font-size: 15px;
+                    line-height: 24px;
+                }
+            }
+
+            .info-project {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+
+                @media screen and (max-width: 940px) {
+                    grid-template-columns: 75% 25%;
+
+                }
+
+            }
+
+            .date-project {
+                display: grid;
+                align-items: center;
+
+                span {
+                    font-family: $Jost;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: $gray;
+
+                    @media screen and (max-width: 1024px) {
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                }
+
+            }
+
+            .container-btn {
+                display: grid;
+                justify-items: end;
+            }
+        }
+    }
+}

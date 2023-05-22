@@ -1,0 +1,21 @@
+.container-brends {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    margin-bottom: 80px;
+
+    @media screen and (max-width: 900px) {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    @media screen and (max-width: 640px) {
+        padding: 0 30px;
+    }
+
+    // @media screen and (max-width: 480px) {
+    //     padding: 0 30px;
+    // }
+}

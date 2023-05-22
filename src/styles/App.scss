@@ -1,0 +1,21 @@
+@import './reset.scss';
+@import './values.scss';
+@import './fonts.scss';
+
+body {
+    background-color: rgb(255, 255, 255);
+    // overflow-x: hidden;
+}
+
+.root {
+    overflow-x: hidden;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+// .content > section {
+//     margin-bottom: 180px;
+// }

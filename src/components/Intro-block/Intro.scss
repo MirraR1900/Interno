@@ -1,0 +1,124 @@
+@import '../../styles/values.scss';
+
+.container-intro {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    margin-bottom: 180px;
+
+    @media screen and (max-width: 840px) {
+        margin-bottom: 120px;
+    }
+
+    @media screen and (max-width: 640px) {
+        margin-bottom: 50px;
+    }
+}
+
+.background-block {
+    max-width: 1400px;
+
+    img {
+        max-width: 100%;
+    }
+}
+
+
+.intro {
+    position: absolute;
+    z-index: 2;
+    margin-left: 100px;
+
+    @media screen and (max-width: 640px) {
+        margin-left: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 0 0 0 120px;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+        width: 650px;
+        color: $dark-gray;
+        font-family: $DMSerifDisplay;
+        font-size: 80px;
+        line-height: 96px;
+        letter-spacing: 0.22px;
+        font-weight: 400;
+
+        @media screen and (max-width: 900px) {
+            font-size: 60px;
+            line-height: 66px;
+        }
+
+        @media screen and (max-width: 720px) {
+            width: 450px;
+            font-size: 40px;
+            line-height: 56px;
+        }
+
+        @media screen and (max-width: 640px) {
+            width: 100%;
+            font-size: 30px;
+            line-height: 56px;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 480px) {
+            margin-top: 30px;
+            font-size: 26px;
+            line-height: 48px;
+        }
+    }
+
+    p {
+        margin-bottom: 50px;
+        width: 650px;
+        color: $gray;
+        font-family: $Jost;
+        font-size: 22px;
+        line-height: 33px;
+        letter-spacing: 0.22px;
+
+        @media screen and (max-width: 900px) {
+            width: 400px;
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        @media screen and (max-width: 720px) {
+            width: 250px;
+            font-size: 18px;
+            line-height: 25px;
+            margin-bottom: 30px;
+        }
+
+        @media screen and (max-width: 640px) {
+            width: 100%;
+            padding: 0 30px;
+            font-size: 18px;
+            line-height: 25px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 480px) {
+            color: $white;
+        }
+    }
+
+    .container-button {
+        @media screen and (max-width: 640px) {
+            display: grid;
+            justify-content: center;
+        }
+
+        @media screen and (max-width: 480px) {
+            display: none;
+        }
+    }
+}

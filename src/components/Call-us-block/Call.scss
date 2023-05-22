@@ -1,0 +1,125 @@
+@import '../../styles/values.scss';
+
+.description-call {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 120px;
+
+    @media screen and (max-width: 1100px) {
+        grid-template-columns: 1fr;
+    }
+    // @media screen and (max-width: 900px) {
+    //     grid-template-columns: 1fr;
+    // }
+
+    .content-call {
+        padding: 0 80px 0 100px;
+
+        @media screen and (max-width: 1100px) {
+            order: 2;
+        }
+
+        @media screen and (max-width: 480px) {
+            padding: 20px;
+        }
+    }
+
+
+    h2 {
+        margin-bottom: 50px;
+        color: $dark-gray;
+        font-family: $DMSerifDisplay;
+        font-size: 50px;
+        font-weight: 400;
+        line-height: 65px;
+        letter-spacing: 0.22px;
+
+        @media screen and (max-width: 1280px) {
+            font-size: 40px;
+            line-height: 55px;
+        }
+
+        @media screen and (max-width: 1100px) {
+            text-align: center;
+            // font-size: 40px;
+            // line-height: 55px;
+        }
+
+        @media screen and (max-width: 640px) {
+            font-size: 30px;
+            line-height: 42px;
+        }
+    }
+
+    .call {
+        margin-bottom: 50px;
+        display: grid;
+        grid-template-columns: 80px 180px;
+        width: 320px;
+
+        img {
+            @media screen and (max-width: 1280px) {
+                max-width: 60px;
+            }
+        }
+    }
+
+    .info-text-call {
+        color: $gray;
+        font-family: $Jost;
+        font-size: 22px;
+        line-height: 33px;
+        letter-spacing: 0.22px;
+        font-weight: 400px;
+        margin-bottom: 50px;
+
+        @media screen and (max-width: 1280px) {
+            font-size: 20px;
+            line-height: 33px;
+        }
+
+        @media screen and (max-width: 1100px) {
+            padding: 0 30px;
+        }
+
+        @media screen and (max-width: 640px) {
+            font-size: 18px;
+            line-height: 30px;
+        }
+    }
+
+    .phone {
+        color: $gray;
+        font-family: $Jost;
+        font-size: 22px;
+        line-height: 33px;
+        letter-spacing: 0.22px;
+        font-weight: 400px;
+
+        @media screen and (max-width: 1280px) {
+            font-size: 18px;
+            line-height: 32px;
+        }
+
+        @media screen and (max-width: 640px) {
+            font-size: 16px;
+            line-height: 28px;
+        }
+    }
+
+    // .phone-text {
+    //     font-size: 24px;
+    //     line-height: 36px;
+
+       
+    // }
+
+    .photo-design {
+        @media screen and (max-width: 1100px) {
+            display: grid;
+            justify-content: center;
+            order: 1;
+            margin: 20px;
+        }
+    }
+}

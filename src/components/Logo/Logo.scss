@@ -1,0 +1,15 @@
+.logo {
+    img {
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .logo {
+        display: grid;
+        justify-content: center;
+        // img {
+        //     cursor: pointer;
+        // }
+    }
+}

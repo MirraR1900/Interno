@@ -1,0 +1,158 @@
+@import '../../styles/values.scss';
+
+.block-comments {
+    margin: 0 auto 150px auto;
+    max-width: 1200px;
+    padding: 100px 50px 120px 50px;
+    background: $white-beige;
+    border: 1px solid $white-beige;
+    border-radius: 50px;
+    text-align: center;
+
+    @media screen and (max-width: 900px) {
+        padding: 50px;
+    }
+
+    h2 {
+        margin-bottom: 40px;
+        font-family: "DMSerifDisplay-Regular";
+        font-size: 45px;
+        font-weight: 400;
+        line-height: 58px;
+        letter-spacing: 0.22px;
+        color: rgb(41, 47, 54);
+
+        @media screen and (max-width: 900px) {
+            font-size: 35px;
+            line-height: 48px;
+        }
+    }
+
+    p {
+        text-align: left;
+    }
+}
+
+.container-comments {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    @media screen and (max-width: 720px) {
+        grid-template-columns: 1fr;
+    }
+
+
+    .comment {
+        max-width: 355px;
+        padding: 50px 70px 45px 35px;
+        border: 1px solid $white;
+        border-radius: 30px;
+        background: $white;
+
+        @media screen and (max-width: 1150px) {
+            padding: 20px;
+            height: 280px;
+        }
+
+        @media screen and (max-width: 900px) {
+            // padding: 50px;
+            // height: 400px;
+            padding: 20px;
+            height: 320px;
+        }
+
+        @media screen and (max-width: 720px) {
+            max-width: 100%;
+            display: grid;
+            grid-template-columns: 30% 70%;
+            align-items: center;
+            height: auto;
+            padding: 10px;
+        }
+
+
+        .comments-header {
+            display: grid;
+            grid-template-columns: 40% 60%;
+            margin-bottom: 30px;
+
+            @media screen and (max-width: 900px) {
+                grid-template-columns: 1fr;
+            }
+
+            @media screen and (max-width: 720px) {
+                max-width: 100%;
+                height: auto;
+                margin-bottom: 0;
+            }
+
+            img {
+                @media screen and (max-width: 720px) {
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        h3 {
+            font-family: $DMSerifDisplay;
+            font-size: 25px;
+            line-height: 37px;
+            letter-spacing: 0.22px;
+            font-weight: 400;
+            color: $dark-gray;
+
+            @media screen and (max-width: 1150px) {
+                font-size: 22px;
+                line-height: 28px;
+            }
+
+            @media screen and (max-width: 900px) {
+                font-size: 20px;
+                line-height: 32px;
+            }
+        }
+
+        .country {
+            font-family: $Jost;
+            font-size: 18px;
+            line-height: 27px;
+            letter-spacing: 0.22px;
+            color: $gray;
+
+            @media screen and (max-width: 1150px) {
+                text-align: center;
+                font-size: 16px;
+                line-height: 22px;
+            }
+
+            @media screen and (max-width: 900px) {
+                text-align: center;
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
+
+        .text-comment {
+            font-family: $Jost;
+            font-size: 20px;
+            line-height: 30px;
+            letter-spacing: 0.22px;
+            color: $gray;
+
+            @media screen and (max-width: 1150px) {
+                font-size: 18px;
+                line-height: 28px;
+            }
+
+            @media screen and (max-width: 900px) {
+                font-size: 16px;
+                line-height: 25px;
+            }
+
+            @media screen and (max-width: 720px) {
+                margin: 0 10px;
+            }
+        }
+    }
+}

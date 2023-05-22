@@ -1,0 +1,127 @@
+@import '../../styles/values.scss';
+
+.container-recent-projects {
+    margin: 0 auto;
+    max-width: 1200px;
+    margin-bottom: 200px;
+
+    @media screen and (max-width: 699px) {
+        margin: 0 30px 100px 30px;
+    }
+
+    h2 {
+        margin-bottom: 40px;
+        font-family: $DMSerifDisplay;
+        font-size: 47px;
+        line-height: 62px;
+        font-weight: 400;
+        letter-spacing: 0.22px;
+        color: $dark-gray;
+        text-align: center;
+
+        @media screen and (max-width: 1024px) {
+            font-size: 42px;
+            line-height: 58px;
+        }
+
+    }
+
+    .info-projects {
+        margin: 0 auto 50px auto;
+        max-width: 800px;
+        font-family: $Jost;
+        font-size: 22px;
+        line-height: 33px;
+        letter-spacing: 0.22px;
+        text-align: center;
+        color: $gray;
+
+        @media screen and (max-width: 1024px) {
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        @media screen and (max-width: 699px) {
+            margin: 0 20px 50px 20px;
+        }
+    }
+
+    .container-projects {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 20px;
+
+        @media screen and (max-width: 699px) {
+            grid-template-columns: 1fr;
+            justify-items: center;
+            align-items: center;
+            padding: 0;
+            gap: 0;
+        }
+
+        .project {
+            max-width: 590px;
+            margin-top: 40px;
+        }
+    }
+
+    .description-project {
+        display: grid;
+        grid-template-columns: 80% 20%;
+        margin-top: 20px;
+        cursor: pointer;
+
+        @media screen and (max-width: 1024px) {
+            grid-template-columns: 70% 30%;
+        }
+
+        .name-project {
+
+            h3 {
+                font-family: $DMSerifDisplay;
+                font-size: 24px;
+                line-height: 37px;
+                letter-spacing: 0.22px;
+                color: $dark-gray;
+                font-weight: 400;
+
+                @media screen and (max-width: 1024px) {
+                    font-size: 22px;
+                    line-height: 34px;
+                }
+            }
+
+            .design-project {
+                font-family: $Jost;
+                font-size: 22px;
+                line-height: 33px;
+                letter-spacing: 0.22px;
+                color: $gray;
+
+                @media screen and (max-width: 1024px) {
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+            }
+        }
+
+
+        .container-btn {
+            text-align: right;
+
+            button {
+                border: none;
+                background: none;
+                padding: 0;
+                cursor: pointer;
+
+                img {
+                    width: 70px;
+                    height: 70px;
+                }
+            }
+        }
+    }
+
+}
