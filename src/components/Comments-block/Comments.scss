@@ -26,6 +26,11 @@
             font-size: 35px;
             line-height: 48px;
         }
+
+        @media screen and (max-width: 480px) {
+            font-size: 25px;
+            line-height: 32px;
+        }
     }
 
     p {

@@ -12,7 +12,7 @@ function Footer() {
                         <div className="title">
                             <Logo />
                         </div>
-                        <p>We are the leading architect and interior design firm in the world.</p>
+                        <p className="description-footer">We are the leading architect and interior design firm in the world.</p>
                         <div className="social-networks">
                             <FontAwesomeIcon icon={faFacebookF} className="icons" />
                             <FontAwesomeIcon icon={faTwitter} className="icons" />
